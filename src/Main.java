@@ -11,7 +11,7 @@ public class Main {
 
         Statement statement = connection.createStatement();
 
-        ResultSet resultSet = statement.executeQuery("select * from books order by asc");
+        ResultSet resultSet = statement.executeQuery("select * from books order by title asc");
 
         while (resultSet.next())
         {
